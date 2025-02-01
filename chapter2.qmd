@@ -6,7 +6,7 @@ prefer-html: true
 
 ```{r, echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
-  url = "https://jwkee0420.github.io/",
+  url = "https://github.com/jwkee0420/Remote-Sensing-Diary/sensorpresentation.html",
   ratio = "16:9")
 ```
 
