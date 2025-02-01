@@ -1,0 +1,24 @@
+project:
+  type: book
+
+book:
+  title: "Quartobook"
+  author: "Jin"
+  date: "23/01/2025"
+  chapters:
+    - index.qmd
+    - chapter1.qmd
+    - chapter2.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+
+editor: visual
+

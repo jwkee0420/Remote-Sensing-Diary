@@ -1,0 +1,13 @@
+---
+title: "The essential tools: Xaringan & Quarto"
+output: html
+prefer-html: true
+---
+
+```{r, echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://jwkee0420.github.io/",
+  ratio = "16:9")
+```
+
+To view this presentation full-screen, [click here](https://joepost.github.io/casa0023-xaringan-wk2pres/).

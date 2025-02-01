@@ -1,0 +1,13 @@
+# CASA0023 Jin's Learning Diary {.unnumbered}
+
+Welcome to my learning diary space which records learnings, reflections and musings from the teaching at CASA0023 Remote Sensing Cities and Environment as part of my studies at UCL's MSc Urban Spatial Science.
+
+Prior to my studies at UCL, I was enrolled at the Bartlett School of Planning BSc Urban Planning, Design and Management programme. Hence, my background lies in more 'humanities' aligned topics like urban design, policy and sustainable development.
+
+If we go even further back, I do have some background in more technical fields such as GIS and remote sensing. I served as a geospatial analyst in the Singapore Armed Forces during my 2-year military conscription prior to my undergraduate studies where I was taught softwares like ArcGIS. I later interned at the Housing and Development Board (HDB) and used Landsat-8/MODIS data to study Urban Heat Island effect in Singapore towns.
+
+My interest in the built environment thus extends to the concept of liveability - how do we measure such a subjective term which can incorporate both technical (e.g temperature, shade, amenities) and design aspects (sense of safety, perceptions and emotions from facades).
+
+Acknowledgements:
+
+This site is built using [Quarto](https://quarto.org/).
