@@ -111,7 +111,7 @@ xaringanExtra::use_panelset()
 <div class="row">
   <div class="col-left" style="width: 70%; float: left;">
     ```{r, echo=FALSE, out.width="80%"}
-    knitr::include_graphics("Quartobook/images/Mindmap.png")
+    knitr::include_graphics("images/Mindmap.png")
     ```
   </div>
   <div class="col-right" style="width: 30%; float: right; padding-left: 20px;">
