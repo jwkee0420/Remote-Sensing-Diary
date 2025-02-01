@@ -6,8 +6,8 @@ prefer-html: true
 
 ```{r, echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
-  url = "https://github.com/jwkee0420/xaringan1/sensorpresentation.html",
+  url = "https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1",
   ratio = "16:9")
 ```
 
-To view this presentation full-screen, [click here](https://joepost.github.io/casa0023-xaringan-wk2pres/).
+To view this presentation full-screen, [click here](https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1).
