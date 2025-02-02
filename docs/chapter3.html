@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jin">
-<meta name="dcterms.date" content="2026-11-01">
 
-<title>Quartobook</title>
+<title>3&nbsp; Week 3: All about Remote Sensing Data – Quartobook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter1.html" rel="next">
+<link href="./summary.html" rel="next">
+<link href="./chapter2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">CASA0023 Jin’s Learning Diary</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: All about Remote Sensing Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -109,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">CASA0023 Jin’s Learning Diary</span></a>
   </div>
 </li>
@@ -127,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: All about Remote Sensing Data</span></span></a>
   </div>
 </li>
@@ -153,7 +152,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#casa0023-jins-learning-diary" id="toc-casa0023-jins-learning-diary" class="nav-link active" data-scroll-target="#casa0023-jins-learning-diary">CASA0023 Jin’s Learning Diary</a></li>
+  <li><a href="#pre-processing" id="toc-pre-processing" class="nav-link active" data-scroll-target="#pre-processing"><span class="header-section-number">4</span> Pre-processing</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><span class="header-section-number">5.1</span> Motivation?</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">5.2</span> Reflections</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,26 +166,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quartobook</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3: All about Remote Sensing Data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jin </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 1, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -191,16 +183,160 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="casa0023-jins-learning-diary" class="level1 unnumbered">
-<h1 class="unnumbered">CASA0023 Jin’s Learning Diary</h1>
-<p>Welcome to my learning diary space which records learnings, reflections and musings from the teaching at CASA0023 Remote Sensing Cities and Environment as part of my studies at UCL’s MSc Urban Spatial Science.</p>
-<p>Prior to my studies at UCL, I was enrolled at the Bartlett School of Planning BSc Urban Planning, Design and Management programme. Hence, my background lies in more ‘humanities’ aligned topics like urban design, policy and sustainable development.</p>
-<p>If we go even further back, I do have some background in more technical fields such as GIS and remote sensing. I served as a geospatial analyst in the Singapore Armed Forces during my 2-year military conscription prior to my undergraduate studies where I was taught softwares like ArcGIS. I later interned at the Housing and Development Board (HDB) and used Landsat-8/MODIS data to study Urban Heat Island effect in Singapore towns.</p>
-<p>My interest in the built environment thus extends to the concept of liveability - how do we measure such a subjective term which can incorporate both technical (e.g temperature, shade, amenities) and design aspects (sense of safety, perceptions and emotions from facades).</p>
-<p>Acknowledgements:</p>
-<p>This site is built using <a href="https://quarto.org/">Quarto</a>.</p>
+<section id="pre-processing" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Pre-processing</h1>
+<p>This week’s content is slightly more technical, covering the different flaws in remote-sensing data and the different ways we can account and correct for them. The flaws and artifacts in the data can come from the technical properties of the sensor, to atmospheric conditions while capturing data across earth. Each flaw is a huge can of worms, with extensive research and modelling happening in the background to ensure that the data that we download publicly is fit to use without distortions or influences from weather, sensor flaws or orthographic projection errors.</p>
+<p>In simple terms, the pre-processing types can be arranged into four seperate categories:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type of Correction</th>
+<th>Image Flaw and Causes</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Geometric Correction</td>
+<td>Image distortion introduced from view angle, topography, wind conditions and rotation of the earth. Using data collected from the sensor such as exact orbit, altitude, imaging parameters, and ground control points, images are resampled so that locations and accurate pixel values can be calculated.</td>
+<td><p><img src="images/resampling.png" class="img-fluid"></p>
+<p>Image credits: <a href="http://tlclab.unipv.it/downloads/STLR_Radar/20120402/05_Geometric_correction.pdf">Università di Pavia</a></p>
+<p>Resampling methods llike nearest neighbour, bilinear and bicubic (illustrated) are a key geometric correction step when reprojecting different geographic referencing systems which are found in many GIS softwares today.</p></td>
+</tr>
+<tr class="even">
+<td>Atmospheric Correction (subset of radiometric correction)</td>
+<td><p>Caused by atmospheric scattering of light which can create ‘adjacency effect’. Atmospheric correction is also divided into two methods: absolute and relative.</p>
+<p><img src="images/hazing.png" class="img-fluid"></p>
+<p>Image Credits: <a href="https://www.mdpi.com/2072-4292/9/10/972#">Sun et. al (2017)</a></p></td>
+<td><p>Absolute atmospheric correction examples:</p>
+<ol type="1">
+<li>Using <strong>atmospheric radiative transfer models</strong> which converts digital numbers (DN) into scaled surface reflectance. This requires either private tools (which costs money) or open-source tools</li>
+<li><strong>Empirical Line Correction</strong> using in-situ reflectance measurements of a known material and establishing a linear model</li>
+</ol>
+<p>Relative atmospheric corrections examples:</p>
+<ol type="1">
+<li><strong>Dark Object Subtraction (DOS)</strong> correct images relative to a single image or other images, using a dark object feature (like water) as a reference point, assuming near zero reflectance.</li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>Orthorectification Correction (subset of geometric correction)</td>
+<td>Distortions caused by sensor tilt and topographical relief. Orthorectification ensures that each point appear as if each pixel is captured directly below the sensor.</td>
+<td>An example orthorectification correction is cosine correction which accounts for the angle at which sunlight hits the earth, causing variability in brightness.</td>
+</tr>
+<tr class="even">
+<td>Radiometric Correction</td>
+<td>Spectral information captured by satellites are affected by atmospheric scattering, absorption which require correction, turning DNs to spectral radiance values.</td>
+<td>The <a href="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/LSDS-1574_L8_Data_Users_Handbook-v5.0.pdf">data handbook for Landsat-8</a> outlines several radiometric corrections based on the sensor property in order to correct for inconsistency for specific spectral bands. These include the OLI solar diffuser, lunar irradiance and underfly acquisitions among many others.</td>
+</tr>
+</tbody>
+</table>
+<p>I also created a small dictionary for key terms learnt this week for quick referencing and look up of definitions.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Terminology</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Digital Number (DN)</td>
+<td><ul>
+<li><p>Numerical values that represent the intensity of electromagnetic radiation and usually converted to radiance/reflectance</p></li>
+<li><p>Raw data collected by satellites and range from 0-65535 (Landsat-8)</p></li>
+<li><p>Unitless - do not represent a physical measurement</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Radiance</td>
+<td><ul>
+<li><p>Also called Top-of-Atmosphere (TOA) radiance</p></li>
+<li><p>Includes radiation from sun, neighbouring pixels, from clouds etc</p></li>
+<li><p>Depends on orientation, path of light, position of target</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Reflectance</td>
+<td><ul>
+<li><p>Property of the material (which is what we want) extracted from radiant corrected data</p></li>
+<li><p>Either TOA reflectance or surface reflectance</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Analysis Ready Data (ARD)</td>
+<td><ul>
+<li>Data which has been pre-processed according to the content above; also include cloud masking</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Band Ratioing</td>
+<td><ul>
+<li>Technique used to display spectral variations, enhancing contrast by dividing reflectance of one image band by another image band</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Spectral Indices</td>
+<td><ul>
+<li><p>Are essentially band ratios or a combination of band ratios</p></li>
+<li><p>Reduce impact of atmospheric conditions or illumination differences</p></li>
+<li><p>A library of indices can be found <a href="https://www.indexdatabase.de/db/i.php">here</a></p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>High/Low Pass Filter</td>
+<td><ul>
+<li><p>Image processing techniques</p></li>
+<li><p>Low pass = smoothing, reduce edges/noise</p></li>
+<li><p>High pass = sharpen, enhance edge and fine details</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Texture</td>
+<td><ul>
+<li><p>Spatial arrangement of pixels in an image; provides information on surface roughness, patterns which helps determine land use types</p></li>
+<li><p>Consider an example like grasslands vs forests: similar spectral properties but different textures</p></li>
+<li><p>First-order - based on individual pixel values; Second-order - based on spatial arrangement of pixels pairs as seen in GLCM</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Pan-sharpen</td>
+<td><ul>
+<li>Using a higher resolution spectral band to enhance resolution of a lower resolution spectral band</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Principle Component Analysis</td>
+<td><ul>
+<li><p>A process that turns original pixel values into uncorrelated values called Principle Components</p></li>
+<li><p>Pixel values are standardised before eigenvector/values is computed from a covariance matrix; each pixel is then mapped onto a new PCA axes</p></li>
+<li><p>Removes redundancy, and correlation between bands</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="applications" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Applications</h1>
+<section id="motivation" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="motivation"><span class="header-section-number">5.1</span> Motivation?</h2>
+<p>This week I challenged myself to reading a few more technical papers discussing more about Land Cover and Land-Use (LCLU) applications of remote sensing, with the focus on methodologies used to classify them from Grey-Level Co-occurrence Matrix (GLCM) to machine learning methods such as Random Forest (RF), Support Vector Machine (SVM) in Object Based Image Analysis (OBIA). While it took a long time to understand what the papers were discussing or proposing, I felt that with the help of this week’s content and some googling, I could make sense of what the authors are investigating.</p>
+<p>The first paper by Mryka Hall-Beyer (2017) is a particular introductory paper on GLCM - she first gives an overview of what GLCM is, its background on textures and the problems with using GLCM. One key issue with Principle Component Analysis used in GLCM is how it is dependent on the researcher choosing which measures and window size to use; and interpret PCA to decide which component to use for land-use classification. Hall-Beyer wishes to address this issue by developing a guideline for choosing relevant GLCM texture measures across different neighbourhood sizes and land covers. She produces different combinations of textures and window sizes on different land covers, and extract similar patterns seen in these combinations. The author found that even across very different land covers, GLCM Mean texture measure should be used as a first choice for classification, with GLCM Cor being used as an addition if necessary. GLCM Con should be used to characterise edge-like features and GLCM Ent can be added for more detailed studies. However, the author cautioned that these are just general guidelines for choosing GLCM textures and every image is different based on features that one might want to characterize. For example, <a href="https://www.sciencedirect.com/science/article/pii/S0303243410000097?casa_token=TEblmSg5LcoAAAAA:lqzDWClzFvFlrJ4qyhbvhkLU4xiNp3eA9y8JxUk_XfDFm0v0ABR1SuikW2rppD10yJ12OjUohSc">Murray et al.&nbsp;(2010)</a> found that the use of Mean, Con and Ent generated the most accurate land-use maps specifically for tundra vegetation. The author also raised an important point to always report textures and combination used along with its accuracies rather than just reporting the most successful model. This can help identify evidence-drive patterns and build a library of ‘textures combinations’ which is helpful for all researchers.</p>
+<p>The second paper explores the use of GLCM textures in vegetation identification. <a href="https://www.mdpi.com/2072-4292/14/18/4585">Mohammadpour et al.&nbsp;(2022)</a> developed a methodology integrating 4 vegetation indices and 12 texture variables into Sentinel 2A spectral bands to classify various vegetation species in complex land classification, with applications in wildfire risk management and biomass monitoring.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/process1.png" class="img-fluid figure-img"></p>
+<figcaption><em>Process of vegetation mapping with Sentinel 2. Image taken from Mohammadpour et al.&nbsp;(2022)</em></figcaption>
+</figure>
+</div>
+<p>I think this process really aptly summarises the content I learnt this week - first we have reprojection/resampling, which is part of geometric corrections and image enhancement. Clipping region of interest is the same process of this week’s practical, for example using terra::crop and terra::mask. The authors used 4 vegetation indices: Normalized Difference Vegetation Index (NDVI), Green Normalized Difference Vegetation Index (GNDVI), Enhanced Vegetation Index (EVI), and Soil Adjusted Vegetation Index (SAVI), which are various band ratios covered in this week’s lectures as well. Texture extraction using GLCM was seen in the practical, although the paper covered the process in more details; including explaining the choice of texture metrics to bring forward to the Random Forest (RF). The model achieved a high Overall Accuracy of 90.9% and texture metrics seem to have increased the classification accuracy.</p>
+</section>
+<section id="reflections" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="reflections"><span class="header-section-number">5.2</span> Reflections</h2>
+<p>This week’s content is pretty daunting at first glance, as we covered a lot of technical content behind how pre-processing works (and the math involved!), even though we probably do not need to handle much of the pre-processing ourselves. However, I do agree with Andy that it is still important for us to understand the calibrations and corrections that are occurring behind the scenes so that we understand <em>where</em> our data came from.</p>
+<p>The second part of the lecture is very very interesting as image enhancement is a constantly evolving field, with different researchers developing new techniques or combining old ones to map out features that they would like to investigate. While reading the papers that utilises image enhancement and correction techniques, I learnt a lot more on the intricacies and problems behind mapping each feature, for example issues with mapping vegetation and their individual species. I realised that there is no one size fit all solution to image classification/enhancement; it depends on our own study area, climate and subject that we want to capture/map. All these tools and techniques are available to us but choosing the most appropriate ones and justifying these choices are the most important and crucial part of the research.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -623,10 +759,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./chapter2.html" class="pagination-link" aria-label="The essential tools: Xaringan &amp; Quarto">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter1.html" class="pagination-link" aria-label="Week 1: Getting started with Remote Sensing">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Getting started with Remote Sensing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
