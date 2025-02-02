@@ -2,7 +2,7 @@
 title: "Week 1: Getting started with Remote Sensing"
 ---
 
-# Week 1: Getting started with Remote Sensing
+# Introduction
 
 The first week of Remote Sensing covers the definitions of remote sensing, what we can do with remote sensing and the technology behind it. The basic understanding of remote sensing is a definition by NASA: “acquiring information from a distance” which is quite broad. This means that even taking a photograph using mobile phones is considered remote sensing. However, the course is centred around satellite images and data, which covers a much larger area in specific areas of the earth and there are a wide range of tools, methods and data sources to choose from when analysing satellite data.
 
