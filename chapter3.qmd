@@ -1,5 +1,5 @@
 ---
-title: "Week 3: All about Remote Sensing Data"
+title: "All about Remote Sensing Data"
 ---
 
 # Pre-processing
@@ -97,7 +97,7 @@ The second paper explores the use of GLCM textures in vegetation identification.
 
 I think this process really aptly summarises the content I learnt this week - first we have reprojection/resampling, which is part of geometric corrections and image enhancement. Clipping region of interest is the same process of this week's practical, for example using terra::crop and terra::mask. The authors used 4 vegetation indices: Normalized Difference Vegetation Index (NDVI), Green Normalized Difference Vegetation Index (GNDVI), Enhanced Vegetation Index (EVI), and Soil Adjusted Vegetation Index (SAVI), which are various band ratios covered in this week's lectures as well. Texture extraction using GLCM was seen in the practical, although the paper covered the process in more details; including explaining the choice of texture metrics to bring forward to the Random Forest (RF). The model achieved a high Overall Accuracy of 90.9% and texture metrics seem to have increased the classification accuracy.
 
-## Reflections
+# Reflections
 
 This week's content is pretty daunting at first glance, as we covered a lot of technical content behind how pre-processing works (and the math involved!), even though we probably do not need to handle much of the pre-processing ourselves. However, I do agree with Andy that it is still important for us to understand the calibrations and corrections that are occurring behind the scenes so that we understand *where* our data came from.
 
