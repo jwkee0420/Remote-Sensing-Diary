@@ -1,8 +1,8 @@
 ---
-title: "Week 1: Getting started with Remote Sensing"
+title: "Getting started with Remote Sensing"
 ---
 
-# Introduction
+## Introduction
 
 The first week of Remote Sensing covers the definitions of remote sensing, what we can do with remote sensing and the technology behind it. The basic understanding of remote sensing is a definition by NASA: “acquiring information from a distance” which is quite broad. This means that even taking a photograph using mobile phones is considered remote sensing. However, the course is centred around satellite images and data, which covers a much larger area in specific areas of the earth and there are a wide range of tools, methods and data sources to choose from when analysing satellite data.
 
@@ -12,7 +12,7 @@ For example, there are many different sources of open satellite data that is ava
 ![](images/landsatsensor.png) *Landsat-8 with its different sensors and resolutions. Source: [NASA](https://landsat.gsfc.nasa.gov/satellites/landsat-8/)*
 :::
 
-## Sensors
+### Sensors
 
 Two broad categories of sensors are active sensors and passive sensors. Passive sensors rely on reflect energy from the sun and thus needs to operate in the day, while active sensors can emit electromagnetic waves, and hence can be operated in the night, giving unique products like Nighttime satellite imagery. Synthetic Aperture Radar, a type of passive sensor, is also known for its all-weather penetration ability and thus is suitable for continuous monitoring. A lot of post-processing of the data also occurs behind the instruments; satellite data download typically has atmospheric corrections applied to it (e.g Landsat Level 2 surface reflectance rather than TOA) so that the data quality is enhanced and suited for scientific analysis.
 
