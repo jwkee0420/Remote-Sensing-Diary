@@ -5,7 +5,7 @@ project:
 book:
   title: "Jin's Learning Diary CASA0023"
   author: "Jin"
-  date: "23/01/2025"
+  date: "01/23/2025"
   chapters:
     - index.qmd
     - chapter1.qmd
