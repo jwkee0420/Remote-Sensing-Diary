@@ -63,3 +63,13 @@ Fortunately, some of the applications of remote sensing has already been rolled 
 Finally, my final note for the Singapore Green Plan 2030 is that although it is jointly delivered by 5 different ministries, the work seems to be very isolated within each ministry and individual goals are delivered in silo. Even within each ministry, different organisations are working on individual sustainable goals - for example National Parks is in charge of all urban greening projects/schemes, including parks planning and tree planting. On the other hand, waste reduction is solely delivered by the Ministry of Sustainability and Environment.
 
 However, climate and sustainability issues are often interdisciplinary in nature; they require cross collaborations between ministries and a comprehensive plan tackling the problem from different angles. Remote sensing may a potential tool and platform where open source information and data can be shared across multiple ministries, enhancing collaborations and increasing transparency of policy implementation as well.
+
+## References 
+
+Bai, H., Li, Z., Guo, H., Chen, H. and Luo, P., 2022. Urban green space planning based on remote sensing and geographic information systems. *Remote Sensing*, *14*(17), p.4213.
+
+Gov.sg, n.d. The Singapore Green Plan. Obtained from <https://www.greenplan.gov.sg/>
+
+Karteris, M., Theodoridou, I., Mallinis, G., Tsiros, E. and Karteris, A., 2016. Towards a green sustainable strategy for Mediterranean cities: Assessing the benefits of large-scale green roofs implementation in Thessaloniki, Northern Greece, using environmental modelling, GIS and very high spatial resolution remote sensing data. *Renewable and Sustainable Energy Reviews*, *58*, pp.510-525.
+
+The Straits Times, 2025. Heat-reflective paint initiative to be rolled out to all HDB estates by 2030. Obtained from <https://www.straitstimes.com/singapore/housing/heat-reflective-paint-initiative-to-be-rolled-out-to-all-hdb-estates-by-2030>

@@ -55,3 +55,11 @@ However, as I went through the practical, I realized that GEE is not a straightf
 These limitations add to the steep learning curve of using GEE, which I feel is still out of reach to many unless you are a developer or researcher. While it has made remote sensing data more accessible and is able to ingest large amounts of data and compute with way lesser time, to effectively utilise its capabilities require lots of time and effort trying to understand its algorithms and architecture.
 
 Another important implication from the introduction of GEE is the potentially widening knowledge gap of using GEE between developed and developing countries. Despite GEE's claims of accessibility for everyone, uptake of GEE in developing countries research has been slow due to lack of technical skill support, and more importantly, a lack of collaborations and lacking internet infrastructure [(Vijayakumar, 2024)](https://link.springer.com/article/10.1007/s12517-024-11948-x). This is a real issue which requires targeted interventions to bridge the digital divide and ensure equitable access to geospatial technology.
+
+## References
+
+Doblas, J., Reis, M.S., Belluzzo, A.P., Quadros, C.B., Moraes, D.R., Almeida, C.A., Maurano, L.E., Carvalho, A.F., Sant’Anna, S.J. and Shimabukuro, Y.E., 2022. DETER-R: an operational near-real time tropical forest disturbance warning system based on Sentinel-1 time series analysis. *Remote Sensing*, *14*(15), p.3658.
+
+Hao, B., Ma, M., Li, S., Li, Q., Hao, D., Huang, J., Ge, Z., Yang, H. and Han, X., 2019. Land use change and climate variation in the three gorges reservoir catchment from 2000 to 2015 based on the Google Earth Engine. *Sensors*, *19*(9), p.2118.
+
+Vijayakumar, S., Saravanakumar, R., Arulanandam, M. and Ilakkiya, S., 2024. Google Earth Engine: empowering developing countries with large-scale geospatial data analysis—a comprehensive review. *Arabian Journal of Geosciences*, *17*(4), p.139.

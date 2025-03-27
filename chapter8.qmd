@@ -20,7 +20,7 @@ Some of the features of SAR include:
 
     -   Its original purpose is to obtain the surface elevation through different of two different InSAR images, but the field has broadened to new methods and techniques like D-InSAR and Small Baseline Subset (SBAS) InSAR. These methods are used in measuring ground displacement, natural disasters and most recently, effects of climate change like land subsidence and glacier movements **over a large area which traditional geological surveys struggle to carry out.**
 
-In my opinion, the high precision and resolution coverage of a large area is perhaps SAR's biggest strength which made research into minute changes in landscape possible. Its weaknesses are seemingly being overcome with the advent of big data and deep learning which can correct errors in phase unwrapping and deformation [(Li et al., 2022)](https://www.sciencedirect.com/scihttps://www.sciencedirect.com/science/article/pii/S1674984721000860ence/article/pii/S1674984721000860).
+In my opinion, the high precision and resolution coverage of a large area is perhaps SAR's biggest strength which made research into minute changes in landscape possible. Its weaknesses are seemingly being overcome with the advent of big data and deep learning which can correct errors in phase unwrapping and deformation [(Li et al., 2022).](https://www.sciencedirect.com/science/article/pii/S1674984721000860)
 
 ![Proposed deep learning method for InSAR phase unwrapping by [Li et al. (2021)](https://ieeexplore.ieee.org/abstract/document/9614199)](images/sar.png){fig-align="center"}
 
@@ -43,3 +43,19 @@ This week covers a seperate type of sensor that works fundamentally differently 
 My key understanding is that while some methods like classification is common through **all types** of remote sensing images, there are methods/processes specific to the characteristic of the data; for example an entire body of research dedicated to SAR data processing such as despeckling and unravelling deformation.
 
 The introduction of high resolution SAR also does not take away the importance and capabilities of multi-spectral data; Thermal studies like urban heat island and air pollution studies can only be carried out through multispectral sensors. For now, SAR applications are seemingly limited to **land mapping** (LULC, forest monitoring etc), **parameter retrieval** (soil moisture etc) or **object detection** (ships, aircrafts etc) [(Tsokas et al., 2022).](https://www.sciencedirect.com/science/article/pii/S0957417422006960?casa_token=y4Hp_PzMuAYAAAAA:iklxuDo2Fkyux9V_0tOKZi-sVHjurTZPDtEuvWEOpSmXeqQTIO-u6G9VJu5QaaE_DEeQ52RRmJw) I am excited to see what future applications of SAR could be - especially with the use of multi-polarisation SAR data, we might be able to better understand the scattering mechanisms across different materials. This will potentially open up new frontiers in new fields or disciplines such as archaeology, ethology (study of animal behaviour), or even wider aspects of climate change such as ocean health.
+
+## References
+
+Choi, J.H., Lee, M.J., Jeong, N.H., Lee, G. and Kim, K.T., 2022. Fusion of target and shadow regions for improved SAR ATR. *IEEE Transactions on Geoscience and Remote Sensing*, *60*, pp.1-17.
+
+Hamidi, E., Peter, B.G., Muñoz, D.F., Moftakhari, H. and Moradkhani, H., 2023. Fast flood extent monitoring with SAR change detection using google earth engine. *IEEE Transactions on Geoscience and Remote Sensing*, *61*, pp.1-19.
+
+Mahdavi, S., Maghsoudi, Y. and Amani, M., 2017. Effects of changing environmental conditions on synthetic aperture radar backscattering coefficient, scattering mechanisms, and class separability in a forest area. *Journal of Applied Remote Sensing*, *11*(3), pp.036015-036015.
+
+Li, S., Xu, W. and Li, Z., 2022. Review of the SBAS InSAR Time-series algorithms, applications, and challenges. *Geodesy and Geodynamics*, *13*(2), pp.114-126.
+
+Li, L., Zhang, H., Tang, Y., Wang, C. and Gu, F., 2021. InSAR phase unwrapping by deep learning based on gradient information fusion. *IEEE Geoscience and Remote Sensing Letters*, *19*, pp.1-5.
+
+Tsokas, A., Rysz, M., Pardalos, P.M. and Dipple, K., 2022. SAR data applications in earth observation: An overview. *Expert Systems with Applications*, *205*, p.117342.
+
+Zhao, W., Qu, Y., Chen, J. and Yuan, Z., 2020. Deeply synergistic optical and SAR time series for crop dynamic monitoring. *Remote Sensing of Environment*, *247*, p.111952.

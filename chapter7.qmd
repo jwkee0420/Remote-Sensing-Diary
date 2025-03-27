@@ -32,7 +32,7 @@ The last part of the lecture covers cross validation
 
 -   Spatial cross validation can account for this issue through spatial partitioning of training/testing data; methods include spatial k-folds, spatial blocking, spatial buffer, or even a spatial Leave-One-Out cross validation
 
-![*Figure 1: Random (top) and spatial partitioning (bottom) of test and training data. Source: [Lovelace et al., 2022](https://bookdown.org/robinlovelace/geocompr/spatial-cv.html)*](images/cv.png){fig-align="center" width="700"}
+![*Figure 1: Random (top) and spatial partitioning (bottom) of test and training data. Source: [Lovelace et al., 2019](https://bookdown.org/robinlovelace/geocompr/spatial-cv.html)*](images/cv.png){fig-align="center" width="700"}
 
 ## Applications
 
@@ -53,3 +53,11 @@ This week's content (around 70 slides) were covered within a span of one hour, w
 There is also seem to be a lot of development of using deep learning (DL) methods in remote sensing applications, with CNNs being used in OBIA and even sub-pixel analysis. However, with the introduction of these novel methods means that there is a need to revise traditional measures of accuracy in remote sensing. [Maxwell et al. (2021)](https://www.mdpi.com/2072-4292/13/13/2450) summarises some of the differences and similarities between traditional RS articles vs novel DL RS articles, where they concluded that newer DL RS papers have abandoned traditional RS accuracy terminologies, instead using computer science/AI aligned terminologies and accuracy assessment for their communication such as F1 scoring (recall/precision) and Intersection-Over-Union (IoU).
 
 With the accelerating growth of AI in recent years, remote sensing is also impacted by the introduction of new algorithms, models and new methods of accuracy assessments are being introduced; I believe there is a greater need for the remote sensing community to standardise terminologies, notations and provide more details on the methodology (such as open-source codes).
+
+## References
+
+Huang, H., Lan, Y., Yang, A., Zhang, Y., Wen, S. and Deng, J., 2020. Deep learning versus Object-based Image Analysis (OBIA) in weed mapping of UAV imagery. *International Journal of Remote Sensing*, *41*(9), pp.3446-3479.
+
+Lovelace, R., Nowosad, J. and Muenchow, J., 2019. *Geocomputation with R*. Chapman and Hall/CRC.
+
+Maxwell, A.E., Warner, T.A. and Guillén, L.A., 2021. Accuracy assessment in convolutional neural network-based deep learning remote sensing studies—Part 1: Literature review. *Remote Sensing*, *13*(13), p.2450.
