@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; The essential tools: Xaringan &amp; Quarto – Quartobook</title>
+<title>5&nbsp; Google Earth Engine – Quartobook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter3.html" rel="next">
-<link href="./chapter1.html" rel="prev">
+<link href="./chapter6.html" rel="next">
+<link href="./chapter4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,8 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/fitvids-2.1.1/fitvids.min.js"></script>
-
 
 
 </head>
@@ -83,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -122,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></span></a>
   </div>
 </li>
@@ -140,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
@@ -167,15 +165,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-google-earth-engine" id="toc-what-is-google-earth-engine" class="nav-link active" data-scroll-target="#what-is-google-earth-engine"><span class="header-section-number">5.1</span> What is Google Earth Engine?</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">5.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></h1>
 </div>
 
 
@@ -192,17 +199,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output-display">
-<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
-<iframe src="https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen=""></iframe>
-<script>fitvids('.shareagain', {players: 'iframe'});</script>
+<section id="what-is-google-earth-engine" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="what-is-google-earth-engine"><span class="header-section-number">5.1</span> What is Google Earth Engine?</h2>
+<p>Google Earth Engine (GEE) is a cloud-based web application that can able to access large amounts of geospatial datasets and carry out analysis on these data without hosting these large datasets in local computers. It is designed not only for researchers, but for anyone to gain access to high-performance computing resources and share them easily through its own interactive application development tools.</p>
+<p>GEE is a game changer in terms of geospatial analysis because of its unique architecture - users interact with GEE through Javascript code editor and write scripts that define the data used and what analysis to carry out (client side), and the script is sent to Google’s cloud servers for processing (server side), before results are computed and visualization is displayed back on the code editor/maps on the client side.</p>
+<p>Some of the features of GEE can be found below</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset" style="background-color: whitesmoke">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Scale (Pixel Resolution)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Projection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Functions and Tools</a></li></ul>
+<div class="tab-content" style="background-color: whitesmoke">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The resolution of images on GEE is set by output and not input; it automatically adjusts the resolution by using image pyramiding based on the closest scale used in the analysis and resamples as needed (default nearest neighbour method). This reduces memory and processor demands, leading to quicker visualisation. However, this can be a problem for users who wants to a specific resolution, in that case they would need to use reproject().</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>GEE is also very straightforward when it comes to projection - it automatically converts to WGS84 for all display and visualisation so you don’t have to set any projections.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>GEE is a one-stop web application which can incorporate all steps in a geosptial analysis process including:</p>
+<ol type="1">
+<li>Reading in data (image collection) and filtering based on conditions (cloud coverage, time period, regions etc)</li>
+<li>Operations to manipulate the data including geometry operations, machine learning, deep learning etc</li>
+<li>Host outputs in terms of geospatial applications, dashboards, online charts</li>
+</ol>
 </div>
 </div>
 </div>
-<p>To view this presentation full-screen, <a href="https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1">click here</a>.</p>
+<p>The power of GEE lies in being able to handle all the different functions across different datasets for multiple sensors across 40+ years, which opened up new possibilities in geospatial analysis such as real-time environmental monitoring. This has real policy impacts for governments as they are able to use GEE to set up and designate protection zones for example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/deforest.png" class="img-fluid figure-img"></p>
+<figcaption><em>Figure 1: Brazillian government uses GEE powered deforestion detection system called DETER-R which analyses Sentinel-1 images time series which is updated daily and signals warnings to help combat illegal logging and deforestation of the Amazon rainforest. Source: <a href="https://www.mdpi.com/2072-4292/14/15/3658">Doblas et al.&nbsp;(2022)</a></em></figcaption>
+</figure>
+</div>
+</section>
+<section id="applications" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
+<p>As mentioned earlier, the introduction of GEE meant that large amount of remote sensing data across a long time period can now be accessed and analysed without downloading individual image into local computers, which enables researchers to focus on the front-end processing and analysis without worrying about the back-end data acquisition.</p>
+<p>One of the biggest application of GEE is in the Land Use/Land Cover (LULC) field, where researchers can now examine LULC changes across a longer time period, which is incredibly important especially when analyzing processes that occur over time, such as urbanisation, hydrological processes, and climate change. GEE offers unprecedented coverage across multiple sources, time and geographical range which makes it suitable to analyse LULC changes and its impact. The capabilities of GEE is what made research done by <a href="https://www.mdpi.com/1424-8220/19/9/2118">Hao at al.&nbsp;(2019)</a> possible, where they analysed the impact of the Three Gorges Reservoir Catchment area across 15 years based on land use changes and climate variation. The authors integrated the use of GEE with GlobeLand30, a dataset developed by China to achieve a full coverage of 15 years since GEE’s Landsat 8 data can fill in missing images from GlobeLand30’s dataset. The figure below shows how a typical GEE workflow might look like for a LULC analysis case.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/three.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2: Work flow of analysing LULC by Hao et al.&nbsp;(2019).</figcaption>
+</figure>
+</div>
+<p>Using an extended time period in their research, the authors are able to analyse differences in LULC, vegetation cover and climate and how the Three Gorges Dam project have caused extensive changes in the local region, which involve massive loss of grassland, cultivated land and forest in specific counties. But at the same time, the authors could also evaluate efforts by the government to restore vegetation in the area, identifying areas with improved LST. This highlights GEE’s advantages - real time continuous monitoring of resources at a global scale which is by far its most attractive feature.</p>
+</section>
+<section id="reflections" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">5.3</span> Reflections</h2>
+<p>I was quite excited to try out GEE this week as I was not aware of its existence when working with remote sensing data a few years back; it seems that this application is too good to be true - it has 40+ years of remote sensing data, no downloads required, and it even has APIs to enable users to build dashboards and interactive maps! (which is the goal of CASA0025 Building Spatial Applications)</p>
+<p>However, as I went through the practical, I realized that GEE is not a straightforward tool to use. Beside needing to use its Javascript code editor to run the script (although a python API is available as well), there are several restrictions with using GEE:</p>
+<ol type="1">
+<li>Image analysis is limited to tools within the GEE API - several advanced atmospheric correction options are not available unless it is implemented manually; to develop new tools require understanding the back-end server side algorithms</li>
+<li>There is an issue with data protection - although you can upload up to 250GB of user data, these data are stored in a private company (Google) servers which is against data sovereignty and security policies for some governments, which also limits its original purpose of making geospatial analysis accessible for many, including informing policies.</li>
+<li>Data mining models for classification are also limited to SVM, CART and RF which may not be sufficient for current advancements in image classification such as Convolutional Neural Network/ Deep learning methods</li>
+</ol>
+<p>These limitations add to the steep learning curve of using GEE, which I feel is still out of reach to many unless you are a developer or researcher. While it has made remote sensing data more accessible and is able to ingest large amounts of data and compute with way lesser time, to effectively utilise its capabilities require lots of time and effort trying to understand its algorithms and architecture.</p>
+<p>Another important implication from the introduction of GEE is the potentially widening knowledge gap of using GEE between developed and developing countries. Despite GEE’s claims of accessibility for everyone, uptake of GEE in developing countries research has been slow due to lack of technical skill support, and more importantly, a lack of collaborations and lacking internet infrastructure <a href="https://link.springer.com/article/10.1007/s12517-024-11948-x">(Vijayakumar, 2024)</a>. This is a real issue which requires targeted interventions to bridge the digital divide and ensure equitable access to geospatial technology.</p>
+</section>
+<section id="references" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
+<p>Doblas, J., Reis, M.S., Belluzzo, A.P., Quadros, C.B., Moraes, D.R., Almeida, C.A., Maurano, L.E., Carvalho, A.F., Sant’Anna, S.J. and Shimabukuro, Y.E., 2022. DETER-R: an operational near-real time tropical forest disturbance warning system based on Sentinel-1 time series analysis.&nbsp;<em>Remote Sensing</em>,&nbsp;<em>14</em>(15), p.3658.</p>
+<p>Hao, B., Ma, M., Li, S., Li, Q., Hao, D., Huang, J., Ge, Z., Yang, H. and Han, X., 2019. Land use change and climate variation in the three gorges reservoir catchment from 2000 to 2015 based on the Google Earth Engine.&nbsp;<em>Sensors</em>,&nbsp;<em>19</em>(9), p.2118.</p>
+<p>Vijayakumar, S., Saravanakumar, R., Arulanandam, M. and Ilakkiya, S., 2024. Google Earth Engine: empowering developing countries with large-scale geospatial data analysis—a comprehensive review.&nbsp;<em>Arabian Journal of Geosciences</em>,&nbsp;<em>17</em>(4), p.139.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -624,13 +684,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter1.html" class="pagination-link" aria-label="Getting started with Remote Sensing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Getting started with Remote Sensing</span></span>
+      <a href="./chapter4.html" class="pagination-link" aria-label="Earth Oberservation and Implications on Policy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Earth Oberservation and Implications on Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter3.html" class="pagination-link" aria-label="All about Remote Sensing Data">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">All about Remote Sensing Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter6.html" class="pagination-link" aria-label="Classification">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

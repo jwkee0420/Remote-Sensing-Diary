@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./chapter5.html" rel="next">
 <link href="./chapter3.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -138,14 +138,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperature Radar</span></span></a>
   </div>
 </li>
     </ul>
@@ -161,6 +173,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#case-study-the-singapore-green-plan-2030" id="toc-case-study-the-singapore-green-plan-2030" class="nav-link active" data-scroll-target="#case-study-the-singapore-green-plan-2030"><span class="header-section-number">4.1</span> Case Study: The Singapore Green Plan 2030</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">4.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -189,16 +202,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="case-study-the-singapore-green-plan-2030" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="case-study-the-singapore-green-plan-2030"><span class="header-section-number">4.1</span> Case Study: The Singapore Green Plan 2030</h2>
 <p>This week of Remote Sensing covers the idea of how remote sensing can be used to inform policies such as urban planning, resource allocation, or disaster mitigation/adaptation. One important lesson that I took away from the session is how Andy mentioned that many of the remote sensing papers did all the complicated analysis and data wrangling, but an equally important section on policy implications is missing. Linking results from analysis to real world implications such as where initiatives should be targetting or how resources should be allocated is a crucial part of a study, not just identifying challenges and phenomenon using remote sensing.</p>
-<p>The case study I chose this week is <a href="https://www.greenplan.gov.sg/">Singapore’s Green Plan 2030</a>. It is the country’s national sustainability movement, aimed to advance climate targets and achieve net zero emissions by 2050. This initiative is jointly delivered by 5 different ministries including Ministries of Sustainability and Environment, Trade and Industry, Transport and National Development and Education. The goals and targets are categorised into 5 pillars as show below:</p>
+<p>The case study I chose this week is <a href="https://www.greenplan.gov.sg/">Singapore’s Green Plan 2030</a>. It is the country’s national sustainability movement, aimed to advance climate targets and achieve net zero emissions by 2050. The country currently faces several climate related issues including rising sea levels threatening coasts, rising temperatures in already hot and humid tropical climate, and increased green house gas emissions. The green plan is a joint initiative by five different ministries aimed to address these issues, achieve goals set in the 2016 Paris Agreement of net zero emissions by 2050.</p>
+<p>The goals and targets are categorised into 5 pillars as show below:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 91%">
+<col style="width: 13%">
+<col style="width: 86%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Pillar</th>
-<th>Goals</th>
+<th>Example Goals</th>
 </tr>
 </thead>
 <tbody>
@@ -207,58 +221,35 @@ ul.task-list li input[type="checkbox"] {
 <td><ol type="1">
 <li><p><strong>Develop over 130 ha of new parks</strong>, and enhance around 170 ha of existing parks with more lush vegetation and natural landscapes</p></li>
 <li><p><strong>Double our annual tree planting rate</strong> between 2020 and 2030, to plant 1 million more trees across Singapore</p></li>
-<li><p><strong>Increase nature parks’ land area by over 50%</strong> from 2020 baseline</p></li>
-<li><p>Every household will be within a <strong>10-minute walk from a park</strong></p></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Sustainable Living</td>
 <td><ol type="1">
-<li><strong>A Green Citizenry that Consumes and Wastes Less</strong>
-<ul>
-<li>Reduce the amount of waste to landfill per capita per day by 20%</li>
-</ul></li>
 <li><strong>Green Commutes</strong>
 <ul>
 <li>Achieve 75% mass public transport (i.e.&nbsp;rail and bus) peak-period modal share</li>
 <li>Expand cycling path networks to around 1,300km</li>
-</ul></li>
-<li><strong>Strengthen Green Efforts in Schools</strong>
-<ul>
-<li>At least 20% of schools to be carbon neutral</li>
 </ul></li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Energy Reset</td>
 <td><ol type="1">
-<li><strong>Green Energy</strong>
-<ul>
-<li>1.5 gigawatt-peak (GWp) of solar energy deployment, which can meet around 2% of our 2025 projected electricity demands, and generate enough electricity to meet the annual electricity needs of around 260,000 households</li>
-</ul></li>
 <li><strong>Greener Infrastructure and Buildings</strong>
 <ul>
 <li>Green 80% of Singapore’s buildings (by Gross Floor Area) by 2030</li>
 <li>80% of new buildings (by Gross Floor Area) to be Super Low Energy buildings from 2030</li>
 </ul></li>
-<li><strong>Sustainable Towns and Districts</strong>
-<ul>
-<li>Reduce energy consumption in existing HDB towns by 15%</li>
-</ul></li>
-<li><strong>Cleaner-energy Vehicles</strong></li>
-<li><strong>Sustainable Aviation</strong></li>
-<li><strong>Sustainable Maritime</strong></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Green Economy</td>
 <td><ol type="1">
-<li><strong>New Investments to be Among the Best-in-Class</strong></li>
 <li><strong>Sustainability as a New Engine for Jobs and Growth</strong>
 <ul>
 <li>Singapore as a carbon services and trading hub in Asia</li>
 <li>Groom a strong pool of local enterprises to capture sustainability opportunities</li>
-<li>Jurong Island to be a sustainable energy and chemicals park</li>
 </ul></li>
 </ol></td>
 </tr>
@@ -266,10 +257,6 @@ ul.task-list li input[type="checkbox"] {
 <td>Resilient Future</td>
 <td><ol type="1">
 <li><strong>Adapt to Sea-level Rise and Enhance Flood Resilience</strong></li>
-<li><strong>Grow Local</strong>
-<ul>
-<li>Build the capability and capacity of our agri-food industry to produce 30% of Singapore’s nutritional needs locally and sustainably</li>
-</ul></li>
 </ol></td>
 </tr>
 </tbody>
@@ -278,31 +265,31 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
-<p>While remote sensing data cannot be applied to all 5 pillars, there are certain applications where remote sensing data can come in useful for evidence-based policy interventions such as pillars <strong>City in Nature, Energy Reset, and Resilient Future.</strong></p>
 <p><strong><em>City in Nature</em></strong></p>
-<p>There are many goals relating to increasing areas of green space including parks and planting more trees, but the key question is where should new green spaces be placed across the island state? Remote sensing can potentially provide an accurate assessment of Land-Use Land Cover (LULC) classification which can help evaluate the locations where urban green space is required. <a href="https://www.mdpi.com/2072-4292/14/17/4213">Bai et al.&nbsp;(2022)</a> developed an urban green space planning evaluation tool based on ecosystem services provision from Land-Use Land Cover to guide the new development of Fengdong New City, balancing residents’ outdoor recreation needs with the benefits of ecosystem services including rivers, forests and greenspace. The authors identified key ecological nodes and suggested an ecological corridor to be formed, thereby increasing areas of green space while protecting the local ecosystems services. This example shows how remote sensing can be used to inform land use planning choices to balance sustainability living and environmental protection.in</p>
+<p>There are many goals relating to increasing areas of green space including parks and planting more trees, but the key question is where should new green spaces be placed across the island state? Remote sensing can potentially provide an accurate assessment of Land-Use Land Cover (LULC) classification which can help evaluate the locations where urban green space is required. By analyzing LULC data, planners can evaluate existing urban landscapes, identify areas lacking green spaces, and prioritize locations where additional parks or tree planting would have the most impact. For example, <a href="https://www.mdpi.com/2072-4292/14/17/4213">Bai et al.&nbsp;(2022)</a> developed an urban green space planning evaluation tool based on ecosystem services provision from Land-Use Land Cover to guide the new development of Fengdong New City, balancing residents’ outdoor recreation needs with the benefits of ecosystem services including rivers, forests and greenspace. Using the tool, an ecological corridor was suggested along key ecological nodes within the new town. Similarly, using LULC data to balance new housing developments and retaining green spaces can be a massive advancement towards a sustainable neighbourhood.</p>
 <p><strong><em>Energy Reset</em></strong></p>
-<p>The high demand of energy use in Singapore’s buildings is also an urgent issue that requires different innovation and technologies to solve. Due to its tropical climate and humidity, coupled with effects of Urban Heat Island (UHI), buildings require large amounts of energy to cool residents and the inhabitants. Reducing energy use through various solutions such as green roofs, solar panels, or even reflective paints can help reduce ambient temperatures and increase thermal comfort for residents. Remote sensing can help assess suitability for certain green roof and solar panels installations, or identify areas suffering from extreme heat risks, and help deploy more resources to actively cool buildings down thereby reducing energy use in buildings. <a href="https://www.sciencedirect.com/science/article/pii/S1364032115013829?casa_token=1ijfpOHL4ZcAAAAA:GGHr3O__YqHTmnQzXr2BvREVf5d5nOPPvYhDaM70tvcu3mO4QNVfoeO3AUsMvJqcZP7MHpwI4Fc">Karteris et al.&nbsp;(2016)</a> used very high resolution satellite images to assess green roof potential in Thessaloniki, Northern Greece, and modelled the benefits of a wide area green roof implementation plan across the entire city. The authors found that green roof implementation could lead to a reduction of cooling consumption by 16% and increase rainwater retention by 45%.</p>
+<p>The high demand of energy use in Singapore’s buildings is also an urgent issue that requires different innovation and technologies to solve. Due to its tropical climate and humidity, coupled with effects of Urban Heat Island (UHI), buildings require large amounts of energy to cool residents and the inhabitants. Reducing energy use through various solutions such as green roofs, solar panels, or even reflective paints can help reduce ambient temperatures and increase thermal comfort for residents. Remote sensing can help assess suitability for green roof and solar panels installations, or identify areas suffering from extreme heat risks, and help deploy more resources to actively cool buildings down, thereby reducing energy use in buildings. <a href="https://www.sciencedirect.com/science/article/pii/S1364032115013829?casa_token=1ijfpOHL4ZcAAAAA:GGHr3O__YqHTmnQzXr2BvREVf5d5nOPPvYhDaM70tvcu3mO4QNVfoeO3AUsMvJqcZP7MHpwI4Fc">Karteris et al.&nbsp;(2016)</a> used very high resolution satellite images to assess green roof potential in Thessaloniki, Northern Greece, and modelled the benefits of a wide area green roof implementation plan across the entire city. The authors found that green roof implementation could lead to a reduction of cooling consumption by 16% and increase rainwater retention by 45%.</p>
 <div style="text-align: center;">
 <p><img src="images/greenroof.png" class="img-fluid"> <em>Mean percentage available roof for green roof installation obtained from analysis of satellite imagery. Source: Karteris et al.&nbsp;(2016)</em></p>
 </div>
-<p>The clear advantage of using satellite imagery is showcased in this green roof study - large scale studies of widespread implementation can only be carried out using satellite imagery, and even accounting for roof slopes and building age to prioritise un-insulated buildings built before 1980. The study could also identify areas where cost-savings are the highest, providing a feasible and realistic green roof implementation plan. This is how remote sensing can be used as a tool to support climate plans in terms of reducing energy use in buildings.</p>
-<p><strong><em>Resilient Future</em></strong></p>
-<p>Finally, rising sea levels and coastal protection can also be analysed through the lens of remote sensing. Coast line monitoring across time seems to be a common form of analysis with the use of remote sensing, and this can be done using open-source, low cost tool across a large area. Other than monitoring, remote sensing also enables evaluation of coastal protection schemes through changes in different coastal wetland types. For example, <a href="https://www.mdpi.com/2077-1312/11/9/1771">Das Neves et al.&nbsp;(2023)</a> studied how the rates of coastal line retreat changed after groynes were added along Ghanian coasts, including how different phases of the project affected the coastline differently. The authors managed to identify locations along the coast where erosion were more noticeable despite the coastal protection scheme, highlighting the power of remote sensing in analysing coastal management plans in great detail using open source data.</p>
-<div style="text-align: center;">
-<p><img src="images/groynes.png" class="img-fluid"> <em>Analysis of individual sections of groynes carried out by <a href="https://www.mdpi.com/2077-1312/11/9/1771/">Das Neves et al., 2023</a>]</em></p>
-</div>
-<p>On the other hand, <a href="https://www.sciencedirect.com/science/article/pii/S0048969721074167?casa_token=g-3JBG35Ca0AAAAA:nZld4UpqLLDlnMG4HUPhFdEPnRBUvSIsvJ8PESOMuM0_CHaDU8Pit-xareH0mq7vNruTdV_PDD0">Wu et al.&nbsp;(2022)</a> analysed the make-up of coastal wetlands using land-use classification, identifying changes in proportion of tidal flats, low marshes and high marshes in respond to development pressures. They found an intense fragmentation of wetlands and coastal squeeze from both urbanisation and sea erosion, highlighting an urgent need to protect current coastal wetlands. Although the algorithms and context may differ, these two examples show how remote sensing is a robust and low-cost tool that supports coastal management plans (and the monitoring of such plans), especially in the face of rising sea levels and accelerating erosion.</p>
+<p>The example demonstrates how remote sensing enables large-scale assessments of green roof feasibility, taking into account factors such as building characteristics (roof slope etc.) , thermal hotspots, and potential cost savings. By providing a data-driven approach, remote sensing can provide a feasible and realistic green roof implementation plan targeting areas where cost-savings can be the highest - all while using open-source data and not expending manpower/labour to check individual roofs for feasibility.</p>
 </section>
 <section id="reflections" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">4.3</span> Reflections</h2>
-<p>Singapore has a highly ambitious plan which aims to achieve coverage over a range of climate and sustainable development agendas from waste reduction to protection of the coast lines. Although these goals and policies are publicly available online, there is a lack of information of how these goals are going to be carried out, including locations of how certain policies is carried out. Remote sensing could provide tools to analyse how best to roll out certain schemes, for example identifiying areas where soil erosion is occurring at the fastest rate along the coastline using a time series analysis of satellite images to map encroaching sea waters.</p>
+<p>Singapore has a highly ambitious plan which aims to achieve coverage over a range of climate and sustainable development agendas from waste reduction to protection of the coast lines. Although these goals and policies are publicly available online, there is a lack of information of how these goals are going to be carried out, including locations of how certain policies is carried out. Remote sensing could provide data-driven tools to analyse the most suitable locations where schemes can be implemented.</p>
 <p>Fortunately, some of the applications of remote sensing has already been rolled out in Singapore. Housing Development Board (HDB), a government board under the Ministry of National Development (MND) has recently announced that heat-resistant paint will be rolled out to all HDB estates following a 2021 pilot study in Tampines, a resident town in East Singapore. Tampines was selected as “HDB’s analysis of satellite images …. showed that the town has a higher average land surface temperature compared to other towns” (HDB, 2021). The new paint is expected to reduce ambient temperatures up to 2 deg C, which is a major improvement to thermal comfort.</p>
 <div style="text-align: center;">
-<p><img src="images/paint.png" class="img-fluid"> <em>Rollout of heat-resistant paint in HDB housing estates. Source: <a href="https://www.straitstimes.com/singapore/housing/heat-reflective-paint-initiative-to-be-rolled-out-to-all-hdb-estates-by-2030">The Strait Times, 2025</a>]</em></p>
+<p><img src="images/paint.png" class="img-fluid"> <em>Very recent rollout of heat-resistant paint in HDB housing estates. Source: <a href="https://www.straitstimes.com/singapore/housing/heat-reflective-paint-initiative-to-be-rolled-out-to-all-hdb-estates-by-2030">The Strait Times, 2025</a>]</em></p>
 </div>
-<p>Finally, my final note for the Singapore Green Plan 2030 is that although it is jointly delivered by 5 different ministries, the work seems to be very isolated within each ministry and individual goals are delivered in silo. Even within each ministry, different organisations are working on individual sustainable goals - for example National Parks is in charge of all urban greening projects/schemes, including parks planning and tree planting. On the other hand, waste reduction is solely delivered by the Ministry of Sustainability and Environment. However, climate and sustainability issues are often interdisplinary in nature; they require cross collaborations between ministries and a comprehensive plan tackling the problem from different angles. Remote sensing may a potential tool and platform where open source information and data can be shared across multiple ministries, enhancing collaborations and increasing transparency of policy implementation as well.</p>
-<p>The existing cross-ministry tool for urban planning, Eplanner, currently has capabilities limited to only planning decisions but the addition of remote sensing data can expand the functions of the cross-ministerial platform to involve monitoring energy, waste, greenery, and other matters related to the Singapore Green Plan.</p>
+<p>Finally, my final note for the Singapore Green Plan 2030 is that although it is jointly delivered by 5 different ministries, the work seems to be very isolated within each ministry and individual goals are delivered in silo. Even within each ministry, different organisations are working on individual sustainable goals - for example National Parks is in charge of all urban greening projects/schemes, including parks planning and tree planting. On the other hand, waste reduction is solely delivered by the Ministry of Sustainability and Environment.</p>
+<p>However, climate and sustainability issues are often interdisciplinary in nature; they require cross collaborations between ministries and a comprehensive plan tackling the problem from different angles. Remote sensing may a potential tool and platform where open source information and data can be shared across multiple ministries, enhancing collaborations and increasing transparency of policy implementation as well.</p>
+</section>
+<section id="references" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
+<p>Bai, H., Li, Z., Guo, H., Chen, H. and Luo, P., 2022. Urban green space planning based on remote sensing and geographic information systems.&nbsp;<em>Remote Sensing</em>,&nbsp;<em>14</em>(17), p.4213.</p>
+<p>Gov.sg, n.d. The Singapore Green Plan. Obtained from <a href="https://www.greenplan.gov.sg/" class="uri">https://www.greenplan.gov.sg/</a></p>
+<p>Karteris, M., Theodoridou, I., Mallinis, G., Tsiros, E. and Karteris, A., 2016. Towards a green sustainable strategy for Mediterranean cities: Assessing the benefits of large-scale green roofs implementation in Thessaloniki, Northern Greece, using environmental modelling, GIS and very high spatial resolution remote sensing data.&nbsp;<em>Renewable and Sustainable Energy Reviews</em>,&nbsp;<em>58</em>, pp.510-525.</p>
+<p>The Straits Times, 2025. Heat-reflective paint initiative to be rolled out to all HDB estates by 2030. Obtained from <a href="https://www.straitstimes.com/singapore/housing/heat-reflective-paint-initiative-to-be-rolled-out-to-all-hdb-estates-by-2030" class="uri">https://www.straitstimes.com/singapore/housing/heat-reflective-paint-initiative-to-be-rolled-out-to-all-hdb-estates-by-2030</a></p>
 
 
 </section>
@@ -732,8 +719,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter5.html" class="pagination-link" aria-label="Google Earth Engine">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

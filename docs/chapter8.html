@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; The essential tools: Xaringan &amp; Quarto – Quartobook</title>
+<title>8&nbsp; Synthetic Aperature Radar – Quartobook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter3.html" rel="next">
-<link href="./chapter1.html" rel="prev">
+<link href="./chapter7.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,8 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/fitvids-2.1.1/fitvids.min.js"></script>
-
 
 
 </head>
@@ -83,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperature Radar</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -122,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></span></a>
   </div>
 </li>
@@ -158,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperature Radar</span></span></a>
   </div>
 </li>
@@ -167,15 +164,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#synthetic-aperture-radar-sar" id="toc-synthetic-aperture-radar-sar" class="nav-link active" data-scroll-target="#synthetic-aperture-radar-sar"><span class="header-section-number">8.1</span> Synthetic Aperture Radar (SAR)</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">8.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.4</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The essential tools: Xaringan &amp; Quarto</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Synthetic Aperature Radar</span></h1>
 </div>
 
 
@@ -192,17 +198,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output-display">
-<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
-<iframe src="https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen=""></iframe>
-<script>fitvids('.shareagain', {players: 'iframe'});</script>
+<section id="synthetic-aperture-radar-sar" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="synthetic-aperture-radar-sar"><span class="header-section-number">8.1</span> Synthetic Aperture Radar (SAR)</h2>
+<p>This final week of remote sensing covers more in-depth knowledge about SAR, especially its application in change detection. As mentioned in week 1, SAR is a type of <strong>active</strong> sensor which sends out radar signal and measures its return signal, also known as back-scattering.</p>
+<p>Some of the features of SAR include:</p>
+<ul>
+<li><p>Due to its long wavelength, different bands of SAR can <strong>penetrate through different mediums and therefore clouds is not a big issue as opposed to optical imaging</strong>. L-band signal for example, with a wavelength of about 23cm, can penetrate through a tree canopy and hence often used for ground monitoring.</p></li>
+<li><p>Surface Texture data is also available from measuring the backscatter - smooth surfaces result in small backscatter but rough surfaces scatter the signal in multiple directions, resulting in higher backscattering.</p>
+<ul>
+<li>This can also be determined by how SAR sends and receive signals in different polarisation (HH, HV, VV and VH). The <strong>different polarisation are sensitive to different types of surfaces</strong>, giving rise to perceived surface textures like bare earth, vegetation and water.</li>
+</ul></li>
+<li><p>The spatial resolution of radar data is related to the ratio of sensor wavelength to the radio antenna length. In simple terms, the longer the antenna, the higher the spatial resolution. Scientists developed the technique “synthetic aperture” which <strong>combines periodic electromagnetic signals into a virtual aperture</strong> that is much longer than the antenna width required.</p></li>
+<li><p>SAR sensors can also detect phase change - used to detect small ground movements; this is known as interferogram or InSAR</p>
+<ul>
+<li>Its original purpose is to obtain the surface elevation through different of two different InSAR images, but the field has broadened to new methods and techniques like D-InSAR and Small Baseline Subset (SBAS) InSAR. These methods are used in measuring ground displacement, natural disasters and most recently, effects of climate change like land subsidence and glacier movements <strong>over a large area which traditional geological surveys struggle to carry out.</strong></li>
+</ul></li>
+</ul>
+<p>In my opinion, the high precision and resolution coverage of a large area is perhaps SAR’s biggest strength which made research into minute changes in landscape possible. Its weaknesses are seemingly being overcome with the advent of big data and deep learning which can correct errors in phase unwrapping and deformation <a href="https://www.sciencedirect.com/science/article/pii/S1674984721000860">(Li et al., 2022).</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sar.png" class="img-fluid figure-img"></p>
+<figcaption>Proposed deep learning method for InSAR phase unwrapping by <a href="https://ieeexplore.ieee.org/abstract/document/9614199">Li et al.&nbsp;(2021)</a></figcaption>
+</figure>
 </div>
+<p>These SAR techniques would also have to evolve with the launch of more advanced SAR satellites capable of multi-polarisation, mutli-channel and multi-mode while current methods rely on <strong>singular polarisation data.</strong> It would be interesting to see how SAR technology will change in the future and how it can be combined with other technologies to develop new tools of measuring and analysing large scale phenomenons.</p>
+</section>
+<section id="applications" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<p>Despite the strengths of SAR data which triumphs optical imagery due to its weather penetrating characteristic making it suitable for high-resolution, and near real-time change detection applications, the use of SAR data is not perfect. SAR images suffer from speckle noise caused by interference between different scatterers within a resolution cell. Layover and shadowing can also distort SAR imagery leading to misclassification of surface features like water or urban areas <a href="https://ieeexplore.ieee.org/abstract/document/9751685?casa_token=NIuZgHGNXRkAAAAA:p1rE5goCZB42otUc5PmUUeU6ibtSEQP5rfHnOkXewuPIDSlcagsDfg3sctMNAG9dUUesvLcpcg">(Choi et al.&nbsp;2022).</a> Researchers has therefore tried to use multi-source remote sensing data to help validate SAR change detection.</p>
+<p>For example, <a href="https://ieeexplore.ieee.org/abstract/document/10026287/?casa_token=zfoYmMvEcNgAAAAA:V6PPgZotZc8ybiurJ3fa3i3AI2GqYTCoHbVcnaHm3eLSlxl0x8owoite0iEG2P_AjxBq3L9suA">Hamidi et al.&nbsp;(2023)</a> leveraged on both optical and SAR imagery to generate near real-time flood delineation maps for Hurricane Ida and Harvey. The flooded areas detected by SAR image changes were validated against multi-spectral imagery along with additional post processing like smoothing to reduce the speckle effect. This novel workflow hosted on Google Earth Engine is designed to overcome limitations of SAR imagery being susceptible to wind and heavy rain which can influence surface roughness of water, leading to incorrect flood identification. The research showed agreement percentages of 78-80% between SAR and optical imagery despite cloud interference for optical imagery, and proved to be a useful way to validate flood extent maps.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/flood.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2: Comparison of SAR, optical imagery (MNDWI), combination of both, as well as unique SAR flood extent captured under clouds. Source: <a href="https://ieeexplore.ieee.org/abstract/document/10026287?casa_token=zfoYmMvEcNgAAAAA:V6PPgZotZc8ybiurJ3fa3i3AI2GqYTCoHbVcnaHm3eLSlxl0x8owoite0iEG2P_AjxBq3L9suA">Hamidi et al., 2023.</a></figcaption>
+</figure>
 </div>
-</div>
-<p>To view this presentation full-screen, <a href="https://jwkee0420.github.io/xaringan1/sensorpresentation.html#1">click here</a>.</p>
+<p>In the research, the multi-source remote sensing method truly shines in its disaster relief applications: while SAR data may miss some flood areas due to surface roughness interference from wind/heavy rain or being hidden under thick vegetation/built up areas (which causes issues with double-bounce backscattering), optical imagery can make up for missed areas since it is better to <em>overestimate</em> flooded areas than <em>underestimate</em> them (error of omission vs error of commision). This is also complemented by the capabilities of GEE which is able to run the script quickly to generate near real-time flood maps which is critical for disaster response and rescue efforts.</p>
+</section>
+<section id="reflections" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">8.3</span> Reflections</h2>
+<p>This week covers a seperate type of sensor that works fundamentally differently compared to the optical imagery and its associated methods covered in the past few weeks. I was left a bit confused - does this mean that the methods covered in previous weeks like supervised/unsupervised classification, sub-pixel analysis does not apply to SAR data since they are used for multi-spectral imagery? As I researched further, I realised that classification techniques can indeed be used on SAR data, but it is challenging because of the inherent speckle noise, often resulting in lower classification accuracy than optical remote sensing data (<a href="https://www.spiedigitallibrary.org/journals/Journal-of-Applied-Remote-Sensing/volume-11/issue-3/036014/Airborne-lidar-detection-of-an-underwater-thermal-vent/10.1117/1.JRS.11.036015.short">Mahdavi et a. 2017)</a>. However, many studies still use classification techniques on SAR data along with optical data because SAR data has a high revisit frequency and all-weather capturing ability, which is valuable for monitoring changes across time <a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425720303229?casa_token=tKCm13gEsGcAAAAA:B4R1mD4pwtAN6ftjszLAsJbHft2r1fMYnFdUMvgSp9pPwjDF3pSoqV12BDNIk68LaB1dtCrgK4E">(Zhao et al.&nbsp;2020).</a></p>
+<p>My key understanding is that while some methods like classification is common through <strong>all types</strong> of remote sensing images, there are methods/processes specific to the characteristic of the data; for example an entire body of research dedicated to SAR data processing such as despeckling and unravelling deformation.</p>
+<p>The introduction of high resolution SAR also does not take away the importance and capabilities of multi-spectral data; Thermal studies like urban heat island and air pollution studies can only be carried out through multispectral sensors. For now, SAR applications are seemingly limited to <strong>land mapping</strong> (LULC, forest monitoring etc), <strong>parameter retrieval</strong> (soil moisture etc) or <strong>object detection</strong> (ships, aircrafts etc) <a href="https://www.sciencedirect.com/science/article/pii/S0957417422006960?casa_token=y4Hp_PzMuAYAAAAA:iklxuDo2Fkyux9V_0tOKZi-sVHjurTZPDtEuvWEOpSmXeqQTIO-u6G9VJu5QaaE_DEeQ52RRmJw">(Tsokas et al., 2022).</a> I am excited to see what future applications of SAR could be - especially with the use of multi-polarisation SAR data, we might be able to better understand the scattering mechanisms across different materials. This will potentially open up new frontiers in new fields or disciplines such as archaeology, ethology (study of animal behaviour), or even wider aspects of climate change such as ocean health.</p>
+</section>
+<section id="references" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
+<p>Choi, J.H., Lee, M.J., Jeong, N.H., Lee, G. and Kim, K.T., 2022. Fusion of target and shadow regions for improved SAR ATR.&nbsp;<em>IEEE Transactions on Geoscience and Remote Sensing</em>,&nbsp;<em>60</em>, pp.1-17.</p>
+<p>Hamidi, E., Peter, B.G., Muñoz, D.F., Moftakhari, H. and Moradkhani, H., 2023. Fast flood extent monitoring with SAR change detection using google earth engine.&nbsp;<em>IEEE Transactions on Geoscience and Remote Sensing</em>,&nbsp;<em>61</em>, pp.1-19.</p>
+<p>Mahdavi, S., Maghsoudi, Y. and Amani, M., 2017. Effects of changing environmental conditions on synthetic aperture radar backscattering coefficient, scattering mechanisms, and class separability in a forest area.&nbsp;<em>Journal of Applied Remote Sensing</em>,&nbsp;<em>11</em>(3), pp.036015-036015.</p>
+<p>Li, S., Xu, W. and Li, Z., 2022. Review of the SBAS InSAR Time-series algorithms, applications, and challenges.&nbsp;<em>Geodesy and Geodynamics</em>,&nbsp;<em>13</em>(2), pp.114-126.</p>
+<p>Li, L., Zhang, H., Tang, Y., Wang, C. and Gu, F., 2021. InSAR phase unwrapping by deep learning based on gradient information fusion.&nbsp;<em>IEEE Geoscience and Remote Sensing Letters</em>,&nbsp;<em>19</em>, pp.1-5.</p>
+<p>Tsokas, A., Rysz, M., Pardalos, P.M. and Dipple, K., 2022. SAR data applications in earth observation: An overview.&nbsp;<em>Expert Systems with Applications</em>,&nbsp;<em>205</em>, p.117342.</p>
+<p>Zhao, W., Qu, Y., Chen, J. and Yuan, Z., 2020. Deeply synergistic optical and SAR time series for crop dynamic monitoring.&nbsp;<em>Remote Sensing of Environment</em>,&nbsp;<em>247</em>, p.111952.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -624,14 +674,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter1.html" class="pagination-link" aria-label="Getting started with Remote Sensing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Getting started with Remote Sensing</span></span>
+      <a href="./chapter7.html" class="pagination-link" aria-label="Classification II">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter3.html" class="pagination-link" aria-label="All about Remote Sensing Data">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">All about Remote Sensing Data</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
