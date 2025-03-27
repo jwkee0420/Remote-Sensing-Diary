@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "Quartobook"
+  title: "Jin's Learning Diary CASA0023"
   author: "Jin"
   date: "23/01/2025"
   chapters:
